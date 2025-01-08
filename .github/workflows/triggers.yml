@@ -1,0 +1,14 @@
+name: Triggers
+
+on:
+ pull_request:
+  types:
+   - opened
+  
+jobs:
+ echo-triggers:
+  runs-on: windows-latest
+  steps: 
+   - name: Window platform
+     shell: bash
+     run: echo "Windows platform"
